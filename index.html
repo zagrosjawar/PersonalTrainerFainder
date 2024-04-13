@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT filter</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    
+    <div>
+        <h2>Personal Trainer Filter</h2> <!-- Changed to h2 for better hierarchy -->
+        <p class="note">The purpose of this project is to utilize APIs to retrieve and process data. Users can filter this data based on selected criteria utilizing HTML, CSS, and JavaScript, enhancing interactive web experiences.</p> 
+    </div>
+    
+    <label for="expertise_select">Select Expertise: </label>
+    <select name="personalTrainers" id="expertise_select">
+      <option value="weightlifting">Weightlifting</option>
+      <option value="cardio">Cardio</option>
+      <option value="yoga">Yoga</option>
+      <option value="pilates">Pilates</option>
+
+    </select>  
+    <br>
+    <label for="communication_select">Select Communication Preference:</label>
+    <select name="communication" id="communication_select">
+      <option value="remote">Remote</option>
+      <option value="in-person">In person</option>
+    </select> 
+    <br>
+    <button type="submit" id="filter_button" onclick="findPersonalTrainers()">Filter Trainers</button>
+    <div id="trainers"></div>
+
+    <footer>
+        <a href="https://github.com/zagrosjawar/PersonalTrainerFainer" target="_blank">View Source on GitHub</a>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
